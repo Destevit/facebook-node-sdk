@@ -23,7 +23,8 @@
     "build": "babel src/ -d lib/",
     "buildw": "babel -w src/ -d lib/",
     "test": "npm run build && node ./node_modules/mocha/bin/mocha --recursive",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "any-promise": "^1.3.0",
